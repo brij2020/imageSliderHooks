@@ -22,16 +22,14 @@ export default function HooksImageSlider() {
 
     const prev = () =>{
         if(prevI === 0) {
-            let prev_ = gal.length - 1 
-            console.log("   ",prev_,prevI)
-            setPrev(prev_) 
-            setIndex(prevI)
-            setNext(prev_-2)
-           
+            
+           setPrev(gal.length-1);
+           setIndex(0);
+           setNext(1);
         } else {
-            setIndex(currInmage)
             setNext(currInmage)
-            setPrev(prevI-1)
+            setIndex(prevI);
+            setPrev(prevI-1);
         }
        
     }
@@ -71,7 +69,7 @@ return (
                         }} 
                          />
                     </div>
-                    <div className="w3-col s4 img">
+                    <div className="w3-col s4 img img-item ">
                     <img 
                         className="demo w3-opacity" 
                         src={`./image/${gal[nextI]}`}
