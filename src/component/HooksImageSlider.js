@@ -36,9 +36,9 @@ export default function HooksImageSlider() {
        
     }
     useEffect(()=>{
-        // let tempid = setInterval(()=>{next()},3000)
+        let tempid = setInterval(()=>{next()},3000)
        
-        // return () =>{ clearInterval(tempid)}
+        return () =>{ clearInterval(tempid)}
     })
     // console.log("next prev",prevI,currInmage, nextI)
 

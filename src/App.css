@@ -74,3 +74,22 @@ button:hover, a:hover {
   width: 33.33333%;
   border: 3px solid  rgb(240, 8, 209);
 }
+
+
+.w3-section{
+  position: relative;
+  
+}
+.fa-caret-right{
+position: absolute;
+top:10%;
+right:0;
+
+}
+
+.fa-caret-left{
+  position: absolute;
+  top:10%;
+  left:0;
+  
+  }
